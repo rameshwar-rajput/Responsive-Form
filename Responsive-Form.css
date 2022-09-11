@@ -1,0 +1,54 @@
+input[type=text]:focus, select, textarea{
+    box-shadow: 0 0 5px rgba(45, 45, 45, 0.8);
+    border: 10px solid rgba(0, 0, 0, 0.8);
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+input[type=reset] {
+  background-color: #0f3f52;
+  color: white;
+  padding: 12px 20px;
+  border:10px;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+.nameF {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.nameL {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+.countryN{
+    float: left;
+    width: -50%;
+    margin-top: 6px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .nameF, .nameL, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
